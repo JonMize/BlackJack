@@ -1,0 +1,50 @@
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fjalla-one-regular {
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 60px;
+    margin-top: 10%;
+    color: #4cc9f0;
+    text-shadow: 0 3px #4361ee, 0 5px #4361ee;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    
+  }
+  .fjalla-one-regular {
+    animation: headJump 3s
+    
+}
+
+  @keyframes headJump {
+    
+    0%,40%,100%{
+        transform: scale(1.0)
+    }
+    20%{
+        transform: scale(2.0)
+    }
+}
+
+
+.button{
+  display: block;
+  margin: auto;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: #add8e6;
+  margin-bottom: 30px;
+  
+}
+a{
+    text-decoration: none;
+}
