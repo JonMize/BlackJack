@@ -1,0 +1,109 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center; /* Centers the container in the viewport */
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr ;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr  2fr 2fr 2fr  ;
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    background-color: #215732; /* Dark green color to match the image */
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+    border: 2px solid #000;
+    grid-gap: 20px;
+}
+
+.header {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    justify-self:start;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.homebutton{
+    grid-column: 1 / 1;
+    grid-row: 9 / 10;
+    justify-self: start; /* Places the Home button at the bottom-left */
+    align-self: end;
+}
+
+.hitbutton{
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+    justify-self: center; /* Places the Home button at the bottom-left */
+    align-self: end;
+}
+
+.standbutton{
+    grid-column: 1 / 1;
+    grid-row: 5/ 6;
+    justify-self: center; /* Places the Home button at the bottom-left */
+    align-self: end;
+}
+
+
+.homebutton button{
+    padding: 15px 30px; /* Increase padding for a bigger button */
+    font-size: 1.5rem; /* Increase the font size for larger text */
+    background-color: blue; /* Keep the background color */
+    color: white; /* Text color */
+    border: 2px solid #000; /* Border around the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+}
+
+.homebutton button:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+}
+
+
+
+.hitbutton button{
+    padding: 15px 30px; /* Increase padding for a bigger button */
+    font-size: 1.5rem; /* Increase the font size for larger text */
+    background-color: blue; /* Keep the background color */
+    color: white; /* Text color */
+    border: 2px solid #000; /* Border around the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+}
+
+.hitbutton button:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+}
+
+
+
+.standbutton button{
+    padding: 15px 20px; /* Increase padding for a bigger button */
+    font-size: 1.5rem; /* Increase the font size for larger text */
+    background-color: blue; /* Keep the background color */
+    color: white; /* Text color */
+    border: 2px solid #000; /* Border around the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.1s ease;
+}
+
+.standbutton button:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+}
