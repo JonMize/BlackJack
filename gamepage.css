@@ -62,7 +62,7 @@ body {
 .standbutton{
     position: fixed;
     left:12.5%;
-    top:75%;
+    top:70%;
     justify-self: center; /* Places stand button */
     align-self: end;
     width:150px;
@@ -242,4 +242,60 @@ body {
     position: fixed;
     bottom:10%;
     text-shadow: #FC0 2px 0 10px;
+}
+
+
+
+
+
+
+
+
+/* Betting Chips Styling */
+.betting-chips {
+    position: fixed;
+    left: 5%;
+    bottom: 10%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    border: 3px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chip:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual chip colors */
+.chip-red {
+    background-color: red;
+}
+
+.chip-blue {
+    background-color: blue;
+}
+
+.chip-green {
+    background-color: green;
+}
+
+.chip-black {
+    background-color: black;
 }
