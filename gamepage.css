@@ -167,7 +167,7 @@ body {
 
 .dealerC1{
     top: 0%;
-    right:0%;
+    right:-15%;
     animation-name: dealer;
     animation-duration: 1s;
     animation-delay: 250ms;
@@ -178,7 +178,7 @@ body {
 .dealerC2{
     
     top: 0%;
-    right:8%;
+    right:-25%;
     
     animation-name: dealer;
     animation-duration: 1s;
@@ -188,8 +188,8 @@ body {
 }
 .playerC1{
    
-    top: 0%;
-    right:8%;
+    top: -7%;
+    right:-15%;
     animation-delay: 375ms;
     background-image: "cards/BACK.png";
     animation-name: player1;
@@ -200,8 +200,8 @@ body {
 }
 .playerC2{
     position:fixed;
-    top: 0;
-    right:0;
+    top: -7%;
+    right:-25%;
     animation-delay: 125ms;
     background-image: "cards/BACK.png";
     animation-name: player2;
@@ -226,7 +226,7 @@ body {
     position:fixed;
     font-size: 40pt;
     top:10%;
-    right:40%;
+    right:30%;
     animation-name: labels;
     animation-duration:3s;
     animation-fill-mode: forwards;
@@ -234,7 +234,7 @@ body {
 }
 .label2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    right:40%;
+    right:30%;
     animation-name: labels;
     animation-duration:3s;
     animation-fill-mode: forwards;
