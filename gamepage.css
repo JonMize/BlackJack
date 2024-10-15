@@ -1,5 +1,4 @@
 body {
-    
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -22,50 +21,54 @@ body {
     background-color: #215732; /* Dark green color to match the image */
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
-    border: 2px solid #000;
+    border: 4px solid #000;
     grid-gap: 20px;
 }
 
 .header {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
+    position: fixed;
+    left:5%;
+    top:5%;
     justify-self:start;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    text-align:justify;
     font-weight: bold;
+    border:4px #000;
+    background-color: blue;
+    border-style: solid;
+    color: white;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    border-radius: 5%;
+    transition: transform 0.2s ease;
+}
+.header:hover {
+    transform: scale(.9); /*slightly smaller on hover*/
 }
 
-.homebutton{
-    grid-column: 1 / 1;
-    grid-row: 9 / 10;
-    justify-self: start; /* Places the Home button at the bottom-left */
-    align-self: end;
-}
 
 .hitbutton{
-    grid-column: 1 / 1;
-    grid-row: 3 / 4;
-    justify-self: center; /* Places the Home button at the bottom-left */
+    position: fixed;
+    left:12.5%;
+    top:55%;
+    justify-self: center; /* Places hit button */
     align-self: end;
+    width:150px;
 }
 
 .standbutton{
-    grid-column: 1 / 1;
-    grid-row: 5/ 6;
-    justify-self: center; /* Places the Home button at the bottom-left */
+    position: fixed;
+    left:12.5%;
+    top:75%;
+    justify-self: center; /* Places stand button */
     align-self: end;
+    width:150px;
 }
 
 
-.homebutton button{
-    padding: 15px 30px; /* Increase padding for a bigger button */
-    font-size: 1.5rem; /* Increase the font size for larger text */
-    background-color: blue; /* Keep the background color */
-    color: white; /* Text color */
-    border: 2px solid #000; /* Border around the button */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.1s ease;
-}
 
 .homebutton button:hover {
     transform: scale(1.1); /* Slightly larger on hover */
@@ -76,7 +79,7 @@ body {
 
 .hitbutton button{
     padding: 15px 30px; /* Increase padding for a bigger button */
-    font-size: 1.5rem; /* Increase the font size for larger text */
+    font-size: 2rem; /* Increase the font size for larger text */
     background-color: blue; /* Keep the background color */
     color: white; /* Text color */
     border: 2px solid #000; /* Border around the button */
@@ -92,9 +95,10 @@ body {
 
 
 
+
 .standbutton button{
     padding: 15px 20px; /* Increase padding for a bigger button */
-    font-size: 1.5rem; /* Increase the font size for larger text */
+    font-size: 2rem; /* Increase the font size for larger text */
     background-color: blue; /* Keep the background color */
     color: white; /* Text color */
     border: 2px solid #000; /* Border around the button */
@@ -106,4 +110,136 @@ body {
 .standbutton button:hover {
     transform: scale(1.1); /* Slightly larger on hover */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for hover effect */
+}
+@keyframes dealer{
+    0%{
+        position: fixed;
+        top:0;
+        right:0;
+    }
+    100%{
+        transform: scale(1.25);
+        transform: translate(-800%,150%);
+    }
+    
+}
+@keyframes player1{
+    0%{
+        position: fixed;
+        top:0;
+        right:0;
+    }
+    50%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: rotateY(180deg);
+        transform: translate(-800%,400%);
+        background-image: "cards/5-C.png";
+    }
+}
+@keyframes player2{
+    0%{
+        position: fixed;
+        top:0;
+        right:0;
+    }
+    50%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: rotateY(180deg);
+        transform: translate(-800%, 400%);
+    }
+}
+@keyframes labels{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.dealerC1{
+    top: 0%;
+    right:0%;
+    animation-name: dealer;
+    animation-duration: 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position:fixed;
+}
+.dealerC2{
+    
+    top: 0%;
+    right:8%;
+    
+    animation-name: dealer;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position:fixed;
+}
+.playerC1{
+   
+    top: 0%;
+    right:8%;
+    animation-delay: 375ms;
+    background-image: "cards/BACK.png";
+    animation-name: player1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position:fixed;
+}
+.playerC2{
+    position:fixed;
+    top: 0;
+    right:0;
+    animation-delay: 125ms;
+    background-image: "cards/BACK.png";
+    animation-name: player2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.playercard{
+    position: fixed;
+    bottom:20%;
+    right:20%;
+}
+
+.dealercard{
+    position: fixed;
+    bottom:70%;
+    right:20%;
+}
+.label1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:fixed;
+    font-size: 40pt;
+    top:10%;
+    right:40%;
+    animation-name: labels;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    text-shadow: #FC0 2px 0 10px;
+}
+.label2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    right:40%;
+    animation-name: labels;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    font-size: 40pt;
+    position: fixed;
+    bottom:10%;
+    text-shadow: #FC0 2px 0 10px;
 }
