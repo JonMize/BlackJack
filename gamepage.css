@@ -245,9 +245,11 @@ body {
 }
 
 
-
-
-
+#win{
+    a:visited{
+        color: blue;
+    }
+}
 
 
 
@@ -299,3 +301,4 @@ body {
 .chip-black {
     background-color: black;
 }
+
