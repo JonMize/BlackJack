@@ -243,3 +243,9 @@ body {
     bottom:10%;
     text-shadow: #FC0 2px 0 10px;
 }
+
+#win{
+    a:visited{
+        color: blue;
+    }
+}
